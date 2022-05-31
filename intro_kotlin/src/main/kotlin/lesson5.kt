@@ -72,4 +72,33 @@ fun main() {
     for (i in 10 downTo 0 step 2) {
         println("i = $i")
     }
+
+    // 配列に対するfor
+    val array = arrayOf("apple", "orange", "melon")
+    for (fruits in array) {
+        println(fruits)
+    }
+    // リスト
+    val list = listOf("東京", "大阪", "京都")
+    for (place in list) {
+        println(place)
+    }
+    for ((index, place) in list.withIndex()) {
+        println("$index = $place")
+    }
+    for (index in list.indices) {
+        println(list[index])
+    }
+    // マップ
+    val map = mapOf(
+        1 to "one",
+        2 to "two",
+        3 to "three"
+    )
+    for (data in map) {
+        println(data)
+    }
+    for ((key, value) in map) {
+        println("$key = $value")
+    }
 }
