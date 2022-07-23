@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgres:14
+    container_name: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - db-store:/var/lib/postgresql/data
+      - ./script:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=todoapp
+      - POSTGRES_PASSWORD=password
+volumes:
+  db-store:
