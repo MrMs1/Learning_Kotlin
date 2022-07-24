@@ -1,8 +1,8 @@
 -- DB作成
-CREATE DATABASE todo;
+CREATE DATABASE todoapp;
 
 -- 作成したDBへ切り替え
-\c todo
+\c todoapp
 
 -- スキーマ作成
 CREATE SCHEMA todoschema;

@@ -1,12 +1,12 @@
 -- DB切り替え
-\c todo
+\c todoapp
 
 -- テーブル作成
 CREATE TABLE  todoschema.task_list (
   task_list_id VARCHAR(10) NOT NULL,
   task_name VARCHAR(50) NOT NULL,
   dead_line TIMESTAMPTZ NOT NULL,
-  done boolean NOT NULL
+  done boolean NOT NULL,
   PRIMARY KEY (task_list_id)
 );
 
