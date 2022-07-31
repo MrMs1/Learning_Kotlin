@@ -1,4 +1,4 @@
-package com.example.webflux.domain
+package com.example.webflux.domain.domainobject
 
 data class Task(
     val taskId: String,
